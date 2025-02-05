@@ -1,0 +1,15 @@
+package topic01;
+
+public class mp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		final int _weeks= 52;
+		
+		System.out.println(_weeks);
+		
+		
+	}
+
+}

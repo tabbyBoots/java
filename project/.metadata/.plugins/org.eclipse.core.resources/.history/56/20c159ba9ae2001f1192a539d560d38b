@@ -1,0 +1,25 @@
+package topic01;
+
+import java.io.Console;
+
+
+
+public class UseConsole {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Console cons = System.console();
+		
+		/*String userName = cons.readLine("Please input user name.");
+		
+		System.out.print("Password?");
+		
+		char[] passwd = cons.readPassword();
+		
+		System.out.println("Account: " + userName);
+		System.out.println("PW: "+ new String(passwd));*/
+		
+	}
+
+}

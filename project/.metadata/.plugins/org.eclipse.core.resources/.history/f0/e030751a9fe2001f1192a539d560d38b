@@ -1,0 +1,15 @@
+package topic01;
+
+public class LongType {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		long value;
+		value = 15165456546544165L;
+		
+		System.out.println("QQ");
+	}
+
+}

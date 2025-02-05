@@ -1,0 +1,16 @@
+package topic02;
+
+public class MathSqrt {
+	
+	double calcSqrt(int a2) {
+		
+		double result=0; 
+		
+		if(a2>0) {
+			result = Math.sqrt(a2);
+		}
+		
+		return result;
+	}
+	
+}

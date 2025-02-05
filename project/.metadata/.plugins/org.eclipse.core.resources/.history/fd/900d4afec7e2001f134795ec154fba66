@@ -1,0 +1,22 @@
+package topic02;
+
+public class print5 {
+	
+	void print5(int upper) {
+		
+		int total=0;
+		
+		for(int i=1; i<upper;i++) {
+			if(i % 5 ==0 && i!=55) {
+				total+=i;
+				System.out.print("\t"+i);
+			}else if(i % 5 ==0) {
+				total+=i;
+				System.out.print("\n\t"+i);
+			}
+		}
+		System.out.print("\nTotal:\t"+total);
+		
+	}
+	
+}

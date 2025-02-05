@@ -1,0 +1,50 @@
+package topic02;
+
+import java.util.Scanner;
+
+public class homework01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		print5 p=new print5();
+		p.print5(100);
+		
+		
+		
+			
+		System.out.print("input num:\t");
+		
+		Scanner s= new Scanner(System.in);
+		int num1 = s.nextInt();
+		
+		System.out.print("input num:\t");
+
+		int num2 = s.nextInt();
+		
+		System.out.print("input num:\t");
+	
+		int num3 = s.nextInt();
+		
+		int ary[]= {num1,num2,num3};//{30,20,10}
+		
+		int numSwap=0;
+		int srtAry[]= {0,0,0};
+		int n=3;
+
+		for(int i=0; i<n-1; i++) {	
+			for(int j=0; j< n-i-1; j++) {				
+				if( ary[j] > ary[j+1] ) {
+					numSwap = ary[j];
+					srtAry[j] = ary[j+1];		
+					srtAry[j+1] = numSwap;
+				}
+			}	
+		}		
+		
+		System.out.print("org ary:\t"+ num1+ "\t"+num2+"\t"+num3+"\n");
+		System.out.print("Srt ary:\t"+ srtAry[0]+ "\t"+srtAry[1]+"\t"+srtAry[2]+"\n");
+		System.out.print("\nEND");
+	
+	}
+
+}

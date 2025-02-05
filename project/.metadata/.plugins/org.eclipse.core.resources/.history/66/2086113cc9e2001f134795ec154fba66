@@ -1,0 +1,13 @@
+package topic02;
+
+public class sort3num {
+	void sort3num() {
+		for(int i=1;i<4;i++) {
+			System.out.print("input num:\t");
+			Scanner s=new Scanner(System.in);
+			System.out.print("1st num:\t"+s.nextint());
+		}
+		
+		
+	}
+}

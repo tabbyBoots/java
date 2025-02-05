@@ -1,0 +1,14 @@
+package topic01;
+
+public class WrongInput {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int result = args[0]* args[1];
+		
+		System.out.println("Result:" + result);
+		
+	}
+
+}

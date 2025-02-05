@@ -1,0 +1,43 @@
+package topic02;
+
+import java.util.Scanner;
+
+public class homework01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		print5 p=new print5();
+		p.print5(100);
+		
+		
+		
+			
+		System.out.print("input num:\t");
+		
+		Scanner s= new Scanner(System.in);
+		int num1 = s.nextInt();
+		System.out.print("num1:\t"+ num1 +"\n");
+		
+		System.out.print("input num:\t");
+
+		int num2 = s.nextInt();
+		System.out.print("num2:\t"+ num2 +"\n");
+		
+		System.out.print("input num:\t");
+	
+		int num3 = s.nextInt();
+		System.out.print("num3:\t"+ num3+"\n");
+		
+		int numTmp=0;
+		
+		if(num1>num2) {
+			numTmp=num1;
+		}else if(num3>num1) {
+			numTmp=num3;
+		}
+		
+		System.out.print("END");
+	
+	}
+
+}

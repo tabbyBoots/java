@@ -1,0 +1,17 @@
+package topic02;
+
+public class print5 {
+	
+	void print5(int upper) {
+		
+		for(int i=1; i<upper;i++) {
+			if(i % 5 ==0 & i<51) {
+				System.out.print(i+"\t");
+			}else if (i % 5 ==0 & i% 50 ==0) {
+				System.out.print("\n"+i+"\t");
+			}
+		}
+		
+	}
+	
+}
