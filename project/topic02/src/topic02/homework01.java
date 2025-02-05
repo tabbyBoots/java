@@ -49,7 +49,13 @@ public class homework01 {
 			MathSqrt ma=new MathSqrt();
 			System.out.println("MathSqrt result: \t"+ma.calcSqrt(a2)+"\n");
 		 */
-
+		
+		//2-輸入三個數值，依數字大小，由大至小列印
+				
+		Scanner s = new Scanner(System.in);
+		Sorting01_test srt01 = new Sorting01_test();
+		srt01.bleSrt(10,20,30);
+		
 		System.out.print("\nEND");
 	
 	}
