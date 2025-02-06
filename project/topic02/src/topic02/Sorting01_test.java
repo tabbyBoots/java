@@ -22,6 +22,5 @@ public class Sorting01_test {
 		System.out.println("total steps:\t\t" + ctr);		
 		System.out.print("org ary:\t\t\t" + num1 + "\t" + num2 + "\t" + num3 + "\t"+ num4 + "\t"+ num5 + "\n");
 		System.out.print("srted ary: \t\t" + ary[0] + "\t" + ary[1] + "\t" + ary[2] + "\t"+ ary[3] + "\t"+ ary[4] + "\n");
-
 	}
 }
