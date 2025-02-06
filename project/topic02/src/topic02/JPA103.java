@@ -17,7 +17,7 @@ public class JPA103 {
 //		    Please input:     ex: 3580 26400 13588
 //		    Average:          ex: 14522.67
 			
-		System.out.println("Please input:");
+		System.out.print("Please input: ");
 		
 		Scanner s= new Scanner(System.in);
 		
@@ -25,11 +25,10 @@ public class JPA103 {
 		
 		sum = a+b+c;
 		
-		average = sum/3;
+		average = sum / 3;
 		
-		System.out.println("\t\t\t"+ (int)a+" "+(int)b+" "+ (int)c );
-		System.out.printf("Average:\t %.2f", average);
+		//System.out.println("\t\t\t"+ (int)a+" "+(int)b+" "+ (int)c );
+		System.out.printf("Average:\t %.2f\n ", average);
 
 	}
-
 }

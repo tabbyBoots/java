@@ -34,14 +34,19 @@ public class JPA105 {
 		name = s.next();
 		
 		System.out.println("Hi, " + name + ",請輸入您的銅板的個數：");
+		
 		System.out.print("請輸入1元的數量：");
 		one = s.nextInt();
+		
 		System.out.print("請輸入5元的數量：");
 		five = s.nextInt();
+		
 		System.out.print("請輸入10元的數量：");
 		ten = s.nextInt();
+		
 		System.out.print("請輸入50元的數量：");
 		fifty = s.nextInt();
+		
 		sum = one + five * 5 + ten * 10 + fifty * 50;
 		System.out.printf("您的錢總共有：%d 千 %d 百 %d 十 %d 元", sum / 1000, sum / 100 % 10, sum / 10 % 10, sum % 10);
 	}

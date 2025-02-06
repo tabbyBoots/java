@@ -22,15 +22,18 @@ public class JPA104 {
 		//(3) 兩組座標輸入完畢，輸出兩組座標之間的距離。
 //		    ex: 介於(1.00,5.00)和(10.00,22.00)之間的距離是19.25
 		
-		System.out.print("Please input 1st coordinate:\t");
+		System.out.print("輸入第1組的x和y座標:\t");
 		
 		Scanner s = new Scanner(System.in);
 		
-		double p1x = s.nextInt(), p1y = s.nextInt();
+		double p1x=0, p1y=0, p2x=0, p2y=0, distance=0;
+		p1x = s.nextInt();
+		p1y = s.nextInt();
 		
-		System.out.print("Please input 2nd coordinate:\t");
+		System.out.print("輸入第2組的x和y座標:\t");
 		
-		double p2x = s.nextInt(), p2y = s.nextInt(), distance = 0;
+		p2x = s.nextInt();
+		p2y = s.nextInt();
 		
 		distance = Math.sqrt(Math.pow(p1x - p2x, 2) + Math.pow(p1y - p2y,2));
 	

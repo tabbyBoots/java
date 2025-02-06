@@ -17,12 +17,12 @@ public class JPA102 {
 		
 		System.out.print("Please input:");
 		
-		Scanner s = new Scanner(System.in);
+		//Scanner s = new Scanner(System.in);
+		//double orgWeightInKG = s.nextInt();
+		double KG = new Scanner(System.in).nextInt();
+		double PD = KG * 2.20462 ;
 		
-		double orgWeightInKG = s.nextInt();
-		double tgtWeightInPD = orgWeightInKG * 2.20462 ;
-		
-		System.out.printf("%.6f kg = %.6f ponds", orgWeightInKG,tgtWeightInPD);
+		System.out.printf("%.6f kg = %.6f ponds\n", KG, PD);
 		
 
 	}
