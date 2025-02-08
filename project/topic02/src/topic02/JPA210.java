@@ -50,7 +50,7 @@ public class JPA210 {
 				break;
 			default:
 				System.out.println("You entered something else.");
-				break;
+				//break;
 		}
 	}	
 }
