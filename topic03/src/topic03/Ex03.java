@@ -36,7 +36,8 @@ public class Ex03 {
 
 			p = s.next();
 			
-			if( p.equalsIgnoreCase("no") || p.contentEquals("n")) {
+			// java字串判斷建議用 contentEquals()函數
+			if( p.contentEquals("no") || p.contentEquals("n")) {
 				System.out.print("不玩了\n");
 				play = false;
 				System.out.printf("%nEND%n");
