@@ -35,10 +35,11 @@ public class homework01 {
 		
 		//2-輸入五個數值，依數字大小，由大至小列印
 				
-		/* 
+		 
 		  Scanner s = new Scanner(System.in); Sorting01_test srt01 = new
-		  Sorting01_test(); srt01.bleSrt(6,14,30,50,77);
-		 */ 
+		  Sorting01_test(); srt01.bleSrt(5 , 10, 33, 20, 2);
+		  //5 , 10, 33, 20, 2 //6,14,30,50,77
+		  
 
 		 //
 		 /*

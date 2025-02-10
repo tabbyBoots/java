@@ -15,12 +15,12 @@ public class Sorting01_test {
 					ary[j + 1] = numSwap;
 				}
 				ctr++;
-				System.out.print("srt ary:\t" + i +"\t"+ j + "\t" + ary[0] + "\t" + ary[1] + "\t" + ary[2] + "\t"+ ary[3]+"\t"+ ary[4]+"\n");
+				System.out.print("srt ary:  " + i +"  "+ j + "  " + ary[0] + "  " + ary[1] + "  " + ary[2] + "  "+ ary[3]+"  "+ ary[4]+"\n");
 			}
 		}
 		System.out.println();
-		System.out.println("total steps:\t\t" + ctr);		
-		System.out.print("org ary:\t\t\t" + num1 + "\t" + num2 + "\t" + num3 + "\t"+ num4 + "\t"+ num5 + "\n");
-		System.out.print("srted ary: \t\t" + ary[0] + "\t" + ary[1] + "\t" + ary[2] + "\t"+ ary[3] + "\t"+ ary[4] + "\n");
+		System.out.println("total steps: " + ctr);		
+		System.out.print("org ary:\t" + num1 + "\t" + num2 + "\t" + num3 + "\t"+ num4 + "\t"+ num5 + "\n");
+		System.out.print("srted ary:\t" + ary[0] + "\t" + ary[1] + "\t" + ary[2] + "\t"+ ary[3] + "\t"+ ary[4] + "\n");
 	}
 }
