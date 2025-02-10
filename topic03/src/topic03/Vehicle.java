@@ -8,8 +8,7 @@ public class Vehicle {
 		private String brand = "Honda";
 	
 	// Constructor
-	public Vehicle() {
-	}
+	public Vehicle() {}
 
 	public Vehicle(int wheel) {
 		this.wheel = wheel;
@@ -23,8 +22,6 @@ public class Vehicle {
 		this.wheel = wheel;
 		this.brand = brand;
 	}
-
-	
 
 	// Method overlording
 
