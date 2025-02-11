@@ -7,7 +7,6 @@ public class Ex06 {
 		System.out.println( "Hello" );
 		System.out.println( parse("Hello") );
 		System.out.println( parse2("pmmfI") ); //pmmfI //Ifmmp
-
 	}
 	
 	static String parse(String a) {
@@ -33,6 +32,7 @@ public class Ex06 {
 	}
 	
 	static String reverse(String a) {
+		//String result = "";
 		String result = "";
 		char tmp = 'a';
 		for(int i=a.length()-1; i >= 0; i--) {
