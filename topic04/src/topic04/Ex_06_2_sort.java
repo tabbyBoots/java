@@ -9,10 +9,9 @@ public class Ex_06_2_sort {
 		
 		int[] data = { 5, 10, 33, 20, 2 };
 		
-		System.out.println("Org Ary: i  j\t" + Arrays.toString(data) + "\n");
-		//Sorting srt = new Sorting();
-		Sorting srt = new Sorting( );
-		System.out.println("Srt Ary: i  j\t" + Arrays.toString( srt.bubble( data ) ) );
+		System.out.println("Org Ary: i  j  " + Arrays.toString(data));
+		Sorting srt = new Sorting(data);
+		System.out.println("Srt Ary: i  j\t" + Arrays.toString( srt.bubble() ));
 	}
 
 }

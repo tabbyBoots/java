@@ -4,5 +4,5 @@
 /**
  * 
  */
-module topic05 {
+module topic06 {
 }

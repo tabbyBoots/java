@@ -8,11 +8,11 @@ import java.util.Scanner;
 public class Searching {
 	
 	//初始值
-	private boolean result = false;
-	private int tgtNum = 0, maxNum = 0, minNum= 0;
-	private String tgtString = "";
-	private char tgtChar =  ' ';
-	private int[] tgtAry = {};
+	boolean result = false;
+	int tgtNum = 0, maxNum = 0, minNum= 0;
+	String tgtString = "";
+	char tgtChar =  ' ';
+	int[] tgtAry = {};
 	
 	//建構子
 	public Searching() {}
@@ -67,7 +67,6 @@ public class Searching {
 					result = true;
 					break;
 				}
-				//System.out.println("Current > [ " + tmp +" ]\t");
 			}			
 		}else {
 			System.out.println("Incorrect method. Please try again.");
