@@ -30,5 +30,22 @@ public class Sorting {
 		System.out.println("\nTotal steps: " + ctr);
 		
 		return data;
-	}	
+	}
+	
+	int [] inserttion(){
+		int n = data.length;
+		int key = 0, j = 0;
+
+		for(int i=1; i<n; i++){
+			key = data[i];
+			j = i-1;
+
+			while( j>= 0 && data[j] < key ){
+				data[j+1] = data[j];
+				j = j-1;
+			}
+			data[j+1] = key;
+		}
+		return data;
+	}
 }
