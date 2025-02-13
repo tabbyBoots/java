@@ -1,0 +1,32 @@
+package tqc_ex;
+//JPA201 ¤À¼Æ¿z¿ï¸
+//(1) ½Ğ³]­p¤@µ{¦¡¡A¦¹µ{¦¡¯à§PÂ_¿é¤J¤À¼Æ¬O§_¤Î®æ¡Aµ{¦¡°õ¦æ®É¡AÅã¥Ü¡iPlease enter score:¡j­n¨D¿é¤J¤À¼Æ¡C
+//(2) ¦pªG¨Ï¥ÎªÌ¿é¤Jªº¤À¼Æ¤j©óµ¥©ó 60¡A«h¿é¥X¡iYou pass¡j¡C
+//(3) ¦pªG¨Ï¥ÎªÌªº¤À¼Æ¤p©ó 60¡A«h¤£°µ¥ô¦ó³B²z¡C
+//(4) ³Ì«á¥Ñ¹q¸£¿é¥X¡iEnd¡j¥Nªíµ{¦¡µ²§ô¡C
+//(5) ­«½Æ°õ¦æ¨â¦¸¡AÅã¥Ü¦p°õ¦æµ²ªG°Ñ¦Òµe­±¡C
+//-----------------------------------------------------------------------------------------------
+// Please enter score:
+// 98
+// You pass
+// End
+// Please enter score:
+// 45
+// End 
+//-----------------------------------------------------------------------------------------------
+
+import java.util.*;
+public class JPA201a {
+	static Scanner keyboard = new Scanner(System.in);
+	public static void main(String[] args) {
+		test();
+		test();
+	}
+	public static void test() {
+		System.out.println("Please enter score:");
+		int k = keyboard.nextInt();
+		if (k >= 60)
+			System.out.println("You pass");
+		System.out.println("End");
+	}
+}

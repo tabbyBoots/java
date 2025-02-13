@@ -1,0 +1,86 @@
+package tqc_ex;
+//JPA205 计耞
+//(1) 叫砞璸祘Α耞ㄏノ┮块俱计琌 236 计
+//(2) 祘Α磅︽礶陪ボEnter an integer:叫ㄏノ块俱计
+//(3) 璝块俱计琌 236 计叫块俱计琌 236 ㄇ俱计计
+//    璝块俱计常ぃ琌 236 计叫块xx ぃ琌 236 计盢ㄏノ块俱计 xx ず
+//(4) 狡磅︽Ω陪ボ磅︽挡狦把σ礶
+//---------------------------------------------------------------------------------------------
+// Enter an integer:
+// 30
+// 30琌236计
+// Enter an integer:
+// 2
+// 2琌2计
+// Enter an integer:
+// 9
+// 9琌3计
+// Enter an integer:
+// 77
+// 77ぃ琌236计
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import java.util.*;
+public class JPA205a {
+	static Scanner input = new Scanner(System.in);
+	public static void main(String[] args) {
+		test();
+		test();
+		test();
+		test();
+	}
+	static void test() {
+		System.out.println("Enter an integer:");
+		int k = input.nextInt();
+		if (k % 6 == 0)
+			System.out.println(k + "琌236计");
+		else if (k % 2 == 0)
+			System.out.println(k + "琌2计");
+		else if (k % 3 == 0)
+			System.out.println(k + "琌3计");
+		else
+			System.out.println(k + "ぃ琌236计");
+	}
+}

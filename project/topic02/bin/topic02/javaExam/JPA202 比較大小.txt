@@ -1,0 +1,84 @@
+package tqc_ex;
+//JPA202 比較大小
+//(1) 請設計一程式，使用者可輸入兩個整數，並且比較兩個整數大小。
+//(2) 程式執行時，畫面顯示【Input:】，請使用者輸入兩組整數，各組整數分別輸入兩個數字，數字中間以空格鍵間隔。
+//(3) 重複執行兩次，一輸入的兩個整數比較大小，顯示如執行結果參考畫面。
+//------------------------------------------------------------------------------------------------
+// Input:
+// 50 88
+// 88 is larger than 50
+// Input:
+// 33 45
+// 45 is larger than 33
+//------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import java.util.*;
+
+public class JPA202a {
+	static Scanner keyboard = new Scanner(System.in);
+	public static void main(String[] args) {
+		test();
+		test();
+	}
+	public static void test() {
+		System.out.println("Input:");
+		int num1 = keyboard.nextInt();
+		int num2 = keyboard.nextInt();
+		if (num1 > num2) {
+			System.out.println(num1 + " is larger than " + num2);
+		} else if (num2 > num1) {
+			System.out.println(num2 + " is larger than " + num1);
+		} else {
+			System.out.println(num1 + " and " + num2 + " are equal.");
+		}
+	}
+}
