@@ -21,7 +21,6 @@ class Personnel extends Employee {	//
 	}
 
 	
-	
 //	void print() {
 //		System.out.println(level);
 //	}
