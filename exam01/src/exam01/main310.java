@@ -27,14 +27,15 @@ public class main310 {
 		do {
 			System.out.print("Input an odd number:");
 			n = sc.nextInt();
-			if( n % 2 == 0) {
-				total += n;
-			}else {
+			if( n % 2 != 0 || n <= 0) {				
 				System.out.println("NOT an odd number.");
+			}else if(n % 2 ==0 && n!=0) {
+				for(int i=2; i<=n; i=i+2) {
+					total += i;
+				}
+				System.out.printf("2 + 4 + 6 + ... + %d=%d", n, total);
+				break;
 			}
-			ctr++;
-		}while( n % 2 == 0 );
-		System.out.printf("2 + 4 + 6 + ... + %d=%d", ctr-1, total);
+		}while( true );
 	}
-
 }
