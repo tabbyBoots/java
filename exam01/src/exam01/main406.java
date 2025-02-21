@@ -17,20 +17,47 @@ public class main406 {
 		// Input a string: java
 		// java has 0 As
 		
-		Scanner s = new Scanner(System.in);
+		//calcStr();
+		//calcStr();
+		Scanner s = new Scanner(System.in);		
 		String str = "";
-		str = s.next();
 		System.out.print("Input a string: ");
+		str = s.nextLine();
+		System.out.printf("%s has %d As%n", str, calcStr2(str) );
 		
+		System.out.print("Input a string: ");
+		str = s.nextLine();
+		System.out.printf("%s has %d As%n", str, calcStr2(str) );
+		
+//		System.out.println("QQ:substring(1) " + str.substring(1));
+//		System.out.println("QQ:substring(0,1) " + str.substring(0,1));
 	}
 	
-	static void calcStr(String str) {
-		int index =0, ctr=0, len= str.length();	
+	static void calcStr() { //用迴圈計算
+		Scanner s = new Scanner(System.in);
 		
-		if( index < len ) {
-			char c = str.charAt(index);
-			if( c == 97 ) {ctr++;}
-		}
+		String str = "";		
+		char c =' ';
+		int index =0, ctr=0;
 		
+		System.out.print("Input a string: ");
+		str = s.nextLine();
+		 	
+		int len= str.length();
+		for(index=0; index < len; index++) {
+			c = str.charAt(index);
+			if( c == 65 ) {ctr++;}
+		}		
+		System.out.printf("%s has %d As%n", str, ctr );		
 	}
+	
+	static int calcStr2(String str) {//用遞迴計算
+		if(str.equals("")) {
+			return 0;
+		}else if( str.substring(0, 1).equals("A") ) {
+			return 1 + calcStr2(str.substring(1));
+		}else {
+			return calcStr2(str.substring(1));
+		}
+	}	
 }
