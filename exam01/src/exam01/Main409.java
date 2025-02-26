@@ -1,5 +1,7 @@
 package exam01;
 
+import java.util.Scanner;
+
 public class Main409 {
 
 	public static void main(String[] args) {
@@ -17,9 +19,40 @@ public class Main409 {
 		// Input a character: p
 		// comuter
 		
+		Scanner s = new Scanner(System.in);
+		//System.out.print("Input a string: ");
+		
+		String inStr = s.next("Input a string: ");
+		String rmStr = s.next("Input a character:  ");
+		
+		StrClass sr = new StrClass();
+		
+		System.out.println(sr.strRm(inStr, rmStr));
 		
 		
+	}
+	
+	static class StrClass {
 		
+		String  strRm(String inStr, String rmStr) {
+			
+			String tgtStr = inStr.substring(0, 1);
+			String nextStr	 = "";
+			String result = "";
+			
+			if( tgtStr == "" ) {
+				return "";
+			}else {
+				
+				if( tgtStr.equals(rmStr) ) {
+					result = result;
+				}else {
+					result = result + tgtStr;
+					nextStr = inStr.substring(1);
+				}				
+				return strRm(nextStr, rmStr);
+			}
+		}
 		
 	}
 
