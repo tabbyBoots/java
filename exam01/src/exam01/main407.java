@@ -42,22 +42,26 @@ public class main407 {
 	}
 	
 	static int loop407(String n, int sum) {
-
-		String curStr = "";
+		
+		//String c = n.substring(0, 1);
+		//String nextStr = n.substring(1);
+		
 		while(!n.equals("")) {
-			sum = sum + Integer.parseInt( n.substring(0, 1) );
-			curStr = n.substring(1);
+			
+			sum = sum + Integer.parseInt(n.substring(0, 1));
+			n = n.substring(1);
+			//sum = sum + Integer.parseInt( c );			
+			
+//			if( !nextStr.equals("") ) {	
+//				c = nextStr.substring(0, 1);
+//				nextStr = nextStr.substring(1);	
+//			}else {
+//				c="";
+//			}			
 		}
 		return sum;			
 	}
-	
-	
-	
-	
-	
-	
-	
-	
+
 
 //    public static int sumLoop(String a,int b)
 //    {
