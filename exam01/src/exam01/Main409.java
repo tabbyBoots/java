@@ -27,8 +27,7 @@ public class Main409 {
 		
 		StrClass sr = new StrClass();
 		
-		System.out.println(sr.strRm(inStr, rmStr));
-		
+		System.out.println(sr.strRm(inStr, rmStr));		
 		
 	}
 	
